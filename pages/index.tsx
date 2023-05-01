@@ -2,9 +2,15 @@ import Image from 'next/image';
 //import { Inter } from 'next/font/google'
 import Head from "next/head";
 //const inter = Inter({ subsets: ['latin'] })
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
 import Header from "../components/Header";
 import type { NextPage } from 'next';
 import About from '../components/About';
+import Skill from '../components/Skill';
+import Skills from "../components/Skills";
+import WorkExperience from '../components/WorkExperience'; 
+
 
 const Home: NextPage = () => {
   return (
@@ -16,28 +22,28 @@ const Home: NextPage = () => {
          
          <Header />
   
-          {/* Hero
+          {/* Hero */}
          <section id='hero' className='snap-start'>
           <Hero />
          </section>
   
-          {/* About  /*}
+          {/* About  */}
           <section id='about' className='snap-center'>
           <About />
          </section>
   
-          {/* Experiences 
+          {/* Experiences */} 
             <section id="experience" className='snap-center'>
              <WorkExperience />
             </section>
   
            
-          {/* Skills 
+          {/* Skills  */}
            <section id='skills' className='snap-start'>
             <Skills /> 
            </section> 
   
-          {/* Projects 
+          {/* Projects  */}
           <section id='projects' className='snap-start'>
             <Projects /> 
            </section>
