@@ -2,7 +2,9 @@ import React from 'react';
 import { Cursor, useTypewriter } from "react-simple-typewriter"; 
 import BackgroundCircles from './BackgroundCircles';
 import { Link } from 'react-router-dom';
-//import Image1 from "./Img/img1.JPG";
+import Image from 'next/image';
+import imageone from "../public/Imgthree.jpg";
+
 //const logo = require("./Img/img1.JPG");
 
 type Props = {};
@@ -10,8 +12,8 @@ type Props = {};
 export default function Hero({}: Props) {
   const [text, count]  = useTypewriter({
     words:[
-       "hi, My name is David",
-       "A-man-with-a-vision.tsx",
+       "Hi, My name is David",
+       "A-man-with-a-passion-for-code.tsx",
        "<ButLovesTohelpOthers />" 
     ],
     loop: true,
@@ -21,7 +23,7 @@ export default function Hero({}: Props) {
     return (
     <div className="h-screen flex flex-col space-y-0 items-center justify-center text-center overflow-hidden">
      <BackgroundCircles />
-     <img className='relative rounded-full h-32 w-32 mx-auto object-cover' src="" alt="my profile picture" />
+     <Image className='relative rounded-full h-32 w-32 mx-auto object-cover' src={imageone} width={0} height={0} alt="my profile picture" />
      <div className='z-20'>
       <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Software Engineer</h2>  
      <h1 className='text-5xl lg:text-4xl font-semibold px-10'>

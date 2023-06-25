@@ -25,7 +25,7 @@ export default function Header({}: Props) {
        className='flex flex-row items-center'
        >
         {/* social icons */}
-        <SocialIcon url='https://twitter.com/' fgColor='gray' bgColor='transparent' />
+        <SocialIcon url='https://www.twitter.com/' fgColor='gray' bgColor='transparent' />
         <SocialIcon url='https://www.youtube.com/100Devs' fgColor='gray' bgColor='transparent'/>
         <SocialIcon url='https://www.facebook.com/meta' fgColor='gray' bgColor='transparent' />
        </motion.div>
