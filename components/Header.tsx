@@ -30,6 +30,7 @@ export default function Header({}: Props) {
         <SocialIcon url='https://www.facebook.com/meta' fgColor='gray' bgColor='transparent' />
        </motion.div>
 
+       <Link href="#contact">
        <motion.div 
        initial={{
          x: 500,
@@ -47,7 +48,8 @@ export default function Header({}: Props) {
        className='flex flex-row items-center text-gray-300 cusor-pointer'>
          <SocialIcon className='cursor-pointer' network='email' fgColor='gray' bgColor='transparent' />
          <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get In Touch</p> 
-       </motion.div>  
+       </motion.div>
+       </Link>  
     </header>
   );
 }
