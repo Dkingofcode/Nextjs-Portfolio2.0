@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import imagenetflix from "../public/Netflix.jpg";
+import Image from 'next/image';
 
 
 type Props = {};
@@ -15,26 +17,19 @@ function Projects({}: Props) {
       <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
        {projects.map((project, i) => (
          <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-           <motion.img 
-           initial={{
-             y: -300,
-             opacity: 0,   
-           }} 
-             transition={{ duration: 1.2 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             src='' alt='' 
-             /> 
+           <Image src={imagenetflix} width={150} height={150} 
+           alt="goretre" 
+           />
             
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-                <h4 className='text-4xl font-semibold text-center'>
-                <span className='underline decoration-[#f7A80A]/54'>
+                <h4 className='text-2xl font-semibold text-center'>
+                <span className='underline decoration-[#F7AB0A]/50'>
                     Case Study {i + 1} of {projects.length};
                 </span>{" "}
                 UPS clone
                 </h4>
 
-                <p className='text-lg text-center md:text-left'>
+                <p className='text-md text-center md:text-left'>
                    Netflix 2.0 app that has a log in and Log out Authentication with Google.
                    It has a beautiful Home Screen with all the movies looking just like Netflix.
                    There is also a subscription page where you can see your active monthly subscription.
@@ -42,10 +37,9 @@ function Projects({}: Props) {
             </div>
          </div>
        ))}
-
       </div>
 
-      <div className='w-full absolute top-[30%] bg-[#F7A80A]/20 left-0 h-[300px] -skew-y-32'>
+      <div className='w-full absolute top-[30%] bg-[#F7A80A]/10 left-0 h-[400px] -skew-y-12'>
 
       </div>
     </div>

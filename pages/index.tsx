@@ -10,7 +10,7 @@ import About from '../components/About';
 import Skill from '../components/Skill';
 import Skills from "../components/Skills";
 import WorkExperience from '../components/WorkExperience'; 
-
+import ContactMe from '@/components/ContactMe';
 
 const Home: NextPage = () => {
 
@@ -46,14 +46,19 @@ const Home: NextPage = () => {
             <WorkExperience />
            </section>
   
-          <section id="skills" className="snap start">
+          <section id="skills" className="snap-start">
             <Skills />
           </section>
-          {/* Contact me 
+
+          <section id="projects" className="snap-start">
+            <Projects />
+          </section>
+
+           
              <section id='contact' className='snap-start'>
                <ContactMe />
              </section> 
-             */}
+            
       </MyDiv>
     );
   };
