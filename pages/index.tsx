@@ -38,8 +38,17 @@ const Home: NextPage = () => {
           <Hero />
          </section>
   
+         <section id='about' className='snap-center'>
+          <About />
+         </section>
            
+           <section id='experience' className='snap-center'>
+            <WorkExperience />
+           </section>
   
+          <section id="skills" className="snap start">
+            <Skills />
+          </section>
           {/* Contact me 
              <section id='contact' className='snap-start'>
                <ContactMe />

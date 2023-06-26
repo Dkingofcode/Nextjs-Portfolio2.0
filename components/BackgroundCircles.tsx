@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 type Props = {};
 
 export default function BackgroundCircles({}: Props) {
+
+  interface DivProps {
+    className?: string;
+    children?: React.ReactNode;
+  }
+
+  const MyDiv: React.FC<DivProps> = ({ className, children }) => {
+    return <div className={className}>{children}</div>;
+  };
+
   return (
     <motion.div 
       initial={{

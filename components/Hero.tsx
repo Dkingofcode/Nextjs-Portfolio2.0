@@ -17,7 +17,7 @@ interface ButtonProps {
 const MyButton: React.FC<ButtonProps> = ({ className, onClick, children }) => {
   return (
     <button className={className} onClick={onClick}>
-      {children as any}
+      {children}
     </button>
   );
 };
@@ -48,10 +48,10 @@ export default function Hero({}: Props) {
   };
 
     return (
-    <MyDiv className="h-screen flex flex-col space-y-0 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-0 items-center justify-center text-center overflow-hidden">
      <BackgroundCircles />
-     <Image className='relative rounded-full h-32 w-32 mx-auto object-cover' src={imageone} width={0} height={0} alt="my profile picture" />
-     <MyDiv className='z-20'>
+     <Image className='relative rounded-full h-32 w-32 mx-auto object-cover' src={imageone} width={500} height={500} alt="my profile picture" />
+     <div className='z-20'>
       <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
         Software Engineer
         </h2>  
@@ -59,7 +59,7 @@ export default function Hero({}: Props) {
        <span className='mr-3'>{text}</span>
        <Cursor cursorColor='#F7AB0A' /> 
      </h1>
-      <MyDiv className='pt-5'>
+      <div className='pt-5'>
 
         <a href="#about">
         <MyButton className='heroButton'>About</MyButton>
@@ -73,9 +73,9 @@ export default function Hero({}: Props) {
         <a href="#projects">
         <MyButton className='heroButton'>Projects</MyButton>
         </a>
-      </MyDiv>
+      </div>
 
-     </MyDiv>
-    </MyDiv>
+     </div>
+    </div>
   );
 }
