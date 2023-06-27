@@ -11,7 +11,8 @@ import Skill from '../components/Skill';
 import Skills from "../components/Skills";
 import WorkExperience from '../components/WorkExperience'; 
 import ContactMe from '@/components/ContactMe';
-
+import { Link } from 'react-router-dom';
+import imagefront from "../public/Netflix.jpg";
 const Home: NextPage = () => {
 
   interface DivProps {
@@ -57,7 +58,16 @@ const Home: NextPage = () => {
            
              <section id='contact' className='snap-start'>
                <ContactMe />
-             </section> 
+             </section>
+
+           
+              <footer className="sticky bottom-5 w-full cursor-pointer">
+               <div className="flex items-center justify-center">
+                 <Image className="h-26 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+                 src={imagefront} alt="bttom pointer" width={0} height={0}  />
+               </div>
+              </footer>
+            
             
       </MyDiv>
     );
